@@ -30,7 +30,8 @@ public class App
                     else if(day == 29){
                         flag=1;//闰年二月最后一天
                         nextDay(year,month,day,flag);
-                    }
+                    }else
+                        nextDay(year,month,day,flag);
                 }else if(day > 28)
                     System.out.println("您输入的日期不存在");
                 else if(day == 28) {
